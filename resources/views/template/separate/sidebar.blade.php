@@ -36,7 +36,7 @@
                with font-awesome or any other icon font library -->
           
           <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="{{route('Anggota') }}" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Anggota
@@ -45,7 +45,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="{{route('Buku') }}" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Buku
@@ -54,13 +54,42 @@
           </li>
 
           <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="{{route('Petugas') }}" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Petugas
               </p>
             </a>
           </li>
+          
+          <li class="nav-item">
+            <a href="{{route('Peminjaman') }}" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Peminjaman 
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="{{route('Pengembalian') }}" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Pengembalian
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="{{route('Rak') }}" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Rak
+              </p>
+            </a>
+          </li>
+          
+          
           
       <!-- /.sidebar-menu -->
     </div>
