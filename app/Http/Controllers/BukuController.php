@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use Illuminate\Http\Request;
 
 class BukuController extends Controller
@@ -19,7 +20,8 @@ class BukuController extends Controller
      */
     public function create()
     {
-        return view('template.perpustakaan.Buku');
+        //
+        return view('Buku.Buku');
     }
 
     /**

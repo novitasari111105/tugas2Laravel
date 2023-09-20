@@ -17,9 +17,9 @@ return new class extends Migration
             $table->unsignedBigInteger('buku_id');
             $table->unsignedBigInteger('anggota_id');
             $table->unsignedBigInteger('petugas_id');
-            $table->foreign('buku_id')->references('id')->on('bukus');
-            $table->foreign('anggota-id')->references('id')->on('anggotas');
-            $table->foreign('petugas_id')->references('id')->on('petugaas');
+            $table->foreign('buku_id')->references('id')->on('buku');
+            $table->foreign('anggota_id')->references('id')->on('anggota');
+            $table->foreign('petugas_id')->references('id')->on('petugas');
             $table->timestamps();
         });
     }

@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('pengembalian', function (Blueprint $table) {
             $table->id();
+            $table->date('tanggal_pengembalian');
+            $table->integer('denda');
+            $table->foreignId('buku_id')->constained('buku');
+            $table->foreignId('anggota_id')->constained('anggota');
+            $table->foreignId('petugas_id')->constained('petugas');
             $table->timestamps();
         });
     }

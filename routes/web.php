@@ -1,12 +1,11 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AnggotaController;
-use App\Http\Controllers\Bukucontroller;
+use App\Http\Controllers\BukuController;
+use App\Http\Controllers\MasterController;
 use App\Http\Controllers\PetugasController;
-Use App\Http\Controllers\PeminjamanController;
-Use APP\Http\Controllers\PengembalianController;
-Use APP\Http\Controllers\RakController;
+use Illuminate\Support\Facades\Route;
+
 
 
 /*
@@ -20,14 +19,19 @@ Use APP\Http\Controllers\RakController;
 |
 */
 
-Route::get('/', function () {
-    return view('template.master');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
 
-//Route::get('/', [AuthorController::class, 'index'])->name('index');
-Route::get('/Anggota', [AnggotaController::class, 'create'])->name('Anggota');
-Route::get('/Buku', [BukuController::class, 'create'])->name('Buku');
-Route::get('/Petugas', [PetugasController::class, 'create'])->name('Petugas');
-Route::get('/Peminjaman', [PeminjamanController::class, 'create'])->name('Peminjaman');
-Route::get('/Pengembalian', [PengembalianController::class, 'create'])->name('Pengembalian');
-Route::get('/Rak', [RakController::class, 'create'])->name('Rak');
+// Route::get('/welcome', function () {
+//     return view('welcome');
+// })-> name('welcome');
+
+// Route::get('/form', function () {
+//     return view('form');
+// })-> name('form');
+
+Route::get('/', [MasterController::class, 'master']);
+Route::get('/buku', [BukuController::class, 'create'])->name('buku');
+Route::resource('/anggota', AnggotaController::class);
+Route::resource('/petugas', PetugasController::class);

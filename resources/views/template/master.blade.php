@@ -3,49 +3,45 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Perpustakaan</title>
+  <title>AdminLTE 3 | Blank Page</title>
 
   <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display-falback">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="{{ asset('AdminLTE-3.2.0/plugins/fontawosome-free/css/all.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css')}}">
   <!-- Theme style -->
-  <link rel="stylesheet" href="{{ asset('AdminLTE-3.2.0/dist/css/adminlte.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('AdminLTE-3.2.0/dist/css/adminlte.min.css')}}">
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
-  @include('template.separate.navbar')
+@include('template.separate.navbar')
   <!-- /.navbar -->
 
-  <!-- Main sidebar container -->
-  @include('template.separate.sidebar')
+  
+  <!-- Main Sidebar Container -->
+@include('template.separate.sidebar')
 
-  <!-- content Wrapper. contains page content -->
-  <div class="content-Wrapper">
-  @yield ('content')
-  </div>
+  <!-- Content Wrapper. Contains page content -->
+@yield('content')
   <!-- /.content-wrapper -->
-
-  <!-- footer -->
-  @include('template.separate.footer')
-  <!-- /footer -->
-
+<!-- footer -->
+@include('template.separate.footer')
+ 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
-</aside>
-<!-- /,control-sidebar -->
+  </aside>
+  <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
 
-<!--jQuery -->
+<!-- jQuery -->
 <script src="{{ asset('AdminLTE-3.2.0/plugins/jquery/jquery.min.js')}}"></script>
 <!-- Bootstrap 4 -->
-<script src="{{ asset('/AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min,js')}}"></script>
-<!-- AdminLTE App -->
-<script src="{{ asset('/AdminLTE-3.2.0/dist/js/adminlte.min.js')}}"></script>
-<script src="{{ asset('AdminlLTE-3.2.0/dist/js/demo.js') }}"></script>
+<script src="{{ asset('AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<!-- AdminLTE-3.2.0 App -->
+<script src="{{ asset('AdminLTE-3.2.0/dist/js/AdminLTE-3.2.0.min.js')}}"></script>
 </body>
 </html>
